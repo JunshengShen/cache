@@ -14,12 +14,17 @@ int main() {
 	cout << c.morton << (a == c) << endl << endl;*/
 
 
-	voxels<VoxelInfo> asd("d:", 2, 2, 64);
+	voxels<VoxelInfo> asd("d:", 2, 2, 32);
 
 
+	cout << endl << endl << endl << endl;
+	for (int i = 32;i < 64;i++) {
+		cout << *asd.getCode(i) << ' ' << asd.voxel.size();
+		cout << endl;
+	}
 
-
-
+	cout << endl << endl << endl;
+	voxels<VoxelInfo> asd_("d:", 2, 2, 64);
 
 
 
