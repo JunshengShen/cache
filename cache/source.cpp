@@ -14,23 +14,33 @@ int main() {
 	cout << c.morton << (a == c) << endl << endl;*/
 
 
-	voxels<VoxelInfo> asd("d:", 2, 2, 32);
-
-
-	cout << endl << endl << endl << endl;
-	for (int i = 32;i < 64;i++) {
-		cout << *asd.getCode(i) << ' ' << asd.voxel.size();
-		cout << endl;
-	}
+	
 
 	cout << endl << endl << endl;
 	voxels<VoxelInfo> asd_("d:", 2, 2, 64);
 
+	VoxelInfo a;
+	a.in_out = 0;
+	a.inside_boun = 0;
+	a.morton = 32;
+	asd_.updateOne(a);
+	cout << endl << endl;
 
 
-
-
-
+	/*for (int i = 0;i < 64;i++) {
+		cout << *asd_.getCode(i) << ' ' << asd_.voxel.size();
+		cout << endl;
+	}
+	cout << endl << endl << endl;
+	for (int i = 0;i < 64;i++) {
+		cout << *asd_.getCode(i) << ' ' << asd_.voxel.size();
+		cout << endl;
+	}
+	cout << endl << endl;
+	for (int i = 0;i < 64;i++) {
+		cout << *asd_.getCode(i) << ' ' << asd_.voxel.size();
+		cout << endl;
+	}*/
 	system("pause");
 	return 0;
 }

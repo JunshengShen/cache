@@ -47,3 +47,13 @@ bool VoxelInfo::operator<(const unsigned long long & o)
 {
 	return morton < o;
 }
+
+unsigned long long VoxelInfo::operator%(const unsigned long long & o)
+{
+	return morton%o;
+}
+
+unsigned long long VoxelInfo::operator/(const unsigned long long & o)
+{
+	return morton / o;
+}
